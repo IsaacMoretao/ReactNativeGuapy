@@ -29,7 +29,7 @@ export function Aside() {
     { href: 'Home', src: Home, alt: 'Home' },
     { href: 'Products', src: Book, alt: 'Book' },
     { href: '#', src: Box, alt: 'Box' },
-    { href: 'Settings', src: Settings, alt: 'Settings' },
+    { href: '#', src: Settings, alt: 'Settings' },
     { href: '#', src: HamburguerButton, alt: 'HamburguerButton' },
   ];
 

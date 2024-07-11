@@ -6,7 +6,6 @@ import { ProductsScreen } from './src/screens/ProductsScreen';
 import { RootStackParamList } from './src/types/navigation';
 import { ThemeProvider } from './src/contexts/themeContext';
 import { Header } from './src/components/Header';
-import SettingsScreen from './src/screens/SettingsScreen';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -23,11 +22,6 @@ const App = () => {
           <Stack.Screen 
             name="Products" 
             component={ProductsScreen} 
-            options={{ header: () => <Header /> }}
-          />
-          <Stack.Screen 
-            name="Settings" 
-            component={SettingsScreen} 
             options={{ header: () => <Header /> }}
           />
         </Stack.Navigator>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { Product } from '../types/types';
 import EditProductModal from './EditProductModal';
-import { useTheme } from '../contexts/themeContext'; // Importe o hook useTheme
+import { useTheme } from '../contexts/themeContext';
 
 type ProductCardProps = {
   product: Product;
@@ -13,7 +13,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onSave }) => {
   const [menuVisible, setMenuVisible] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [currentProduct, setCurrentProduct] = useState<Product>(product);
-  const { darkMode } = useTheme(); // Obtém o estado darkMode do contexto de tema
+  const { darkMode } = useTheme();
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
@@ -83,8 +83,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   cardDark: {
-    backgroundColor: '#444', // Exemplo de fundo escuro para tema dark
-    borderColor: '#666', // Exemplo de borda mais escura para tema dark
+    backgroundColor: '#444',
+    borderColor: '#666',
   },
   image: {
     width: 60,
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   titleDark: {
-    color: '#fff', // Ajuste da cor do texto para tema dark
+    color: '#fff',
   },
   headerRight: {
     flexDirection: 'row',
@@ -119,14 +119,14 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   dateDark: {
-    color: '#ccc', // Ajuste da cor do texto para tema dark
+    color: '#ccc',
   },
   menuButton: {
     fontSize: 20,
     color: '#333',
   },
   menuButtonDark: {
-    color: '#ccc', // Ajuste da cor do texto para tema dark
+    color: '#ccc',
   },
   menu: {
     position: 'absolute',
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   menuItemTextDark: {
-    color: '#000', // Ajuste da cor do texto para tema dark
+    color: '#000',
   },
   observacoes: {
     fontSize: 14,
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   observacoesDark: {
-    color: '#ccc', // Ajuste da cor do texto para tema dark
+    color: '#ccc',
   },
   footer: {
     flexDirection: 'row',
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   footerTextDark: {
-    color: '#ccc', // Ajuste da cor do texto para tema dark
+    color: '#ccc',
   },
 });
 

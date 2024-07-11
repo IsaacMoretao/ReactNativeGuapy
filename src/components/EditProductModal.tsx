@@ -1,7 +1,6 @@
-// EditProductModal.tsx
 import React, { useState } from 'react';
 import { Modal, View, Text, TextInput, Button, StyleSheet } from 'react-native';
-import { Product } from '../types/types'; // Atualize o caminho conforme necessário
+import { Product } from '../types/types';
 
 type EditProductModalProps = {
   visible: boolean;
